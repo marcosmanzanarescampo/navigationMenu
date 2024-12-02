@@ -1,0 +1,99 @@
+.navBar{
+    width: 100%;
+    display:flex; 
+    flex-flow: row wrap;
+    justify-content:space-between; 
+    margin: 0;
+}
+
+.navBar img{
+
+    width: 100px;
+    height: 100px;
+
+}
+
+.menu ul{
+    display:flex;    
+    flex-flow: row wrap;
+    align-content: flex-end;
+    margin: 10px;
+    list-style: none;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-align: center; 
+    padding: 20px;
+    color: black;
+    border-radius: 30px;
+}
+
+.menu li{
+    display:block;
+    padding: 1em;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+.menu a:hover{
+    background-color: black;
+    color: white;
+}
+
+.logo2{
+
+    width: 5px;
+    height: 5px;
+
+}
+
+
+.logo2:hover{
+
+    transform: scale(1.1);
+
+}
+
+@media screen and (min-width: 700px) {
+
+    .logo1 {
+        visibility: visible
+    }
+
+    .menu{
+
+        display: flex;
+        
+    }
+
+    .logo2 {
+
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .logo1 {
+        display: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .navBar{
+
+        justify-content:flex-end; 
+    }
+
+    .logo2 {
+        visibility: visible;
+    }
+
+
+}
